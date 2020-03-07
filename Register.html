@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="MyStyle.css">
+    <title>Pet Salon</title>
+</head>
+<body>
+    <header>
+        <h1>
+            The Fashion Pet
+        </h1>
+        <nav id="menu">
+            <a href="index.html">
+                Home
+            </a>
+            <a href="#">
+                About
+            </a>
+            <a href="register.html">
+                Register
+            </a>
+        </nav>
+
+    </header>
+<main>
+    <br>
+    <div class="Input-Pet">
+<form action="#" class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    
+    <p>
+        <label for="Name">
+            Name:
+        </label>
+        <input id="txtName" type="text" class="form-control">
+        
+        <label for="Age">
+            Age:
+        </label>
+        <input id="txtAge" type="number" name="Age" class="form-control">
+    </p>
+
+    <p>
+        <label for="Gender">
+            Gender:
+        </label>
+        <select name="Services" id="ddlGender">
+            <option value="" disabled selected>--Select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="Breed">
+            Breed:
+        </label>
+        <input id="txtBreed" type="text" class="form-control">
+    </p>
+
+    
+    <p>
+        <label for="Services">
+            Service:
+        </label>
+        <select name="Services" id="ddlService">
+            <option value="" disabled selected>--Select--</option>
+            <option value="Shower">Shower</option>
+            <option value="Hair Cut">Hair Cut</option>
+            <option value="Full Service">Full Service</option>
+        </select>
+    </p>
+    
+    <p>
+        <label for="OwnerName">
+            Owner's Name:
+        </label>
+        <input id="txtOwnerName" type="text" class="form-control">
+        </p>
+
+        
+    <p>
+        <label for="ContactPhone">
+            Contact Phone::
+        </label>
+        <input id="txtOwnerContact" type="text" class="form-control">
+    </p>
+
+    <input type="button" value="Register" onclick="Register()" class="btn btn-success">
+</form>
+</div>
+<br><br>
+<div class="Display">
+
+    <div class="TopDisplay">
+        <div class="Search">
+            <input type="search" name="search" id="PetSearch">
+            <button onclick="Search();">
+                Search
+            </button>
+        </div>
+    </div>
+
+    <div class="table-div">
+        <table class="table">
+            <thead>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Breed
+                </th>
+                <th>
+                    Service
+                </th>
+                <th>
+                    Owner Name
+                </th>
+                <th>
+                    Contact
+                </th>
+                <th>
+
+                </th>
+            </thead>
+            <tbody id="rowPet">
+            
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+</main>
+<footer>
+    <div id="info" class="info">
+        
+    </div>
+
+</footer>
+<script src="MyScript.js">
+
+</script>
+</body>
+</html>
